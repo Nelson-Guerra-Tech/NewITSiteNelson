@@ -242,7 +242,7 @@ body {
 
 .projects-page {
     width: 100vw;
-    height: 2500px;
+    height: 3000px;
     margin: 0;
     padding: 0;
     display: flex;
@@ -325,16 +325,20 @@ body {
 
 .project-description {
     width: 32rem;
-    height: 25rem;
+    height: 29rem;
     border-radius: 5px 5px 5px 5px;
     background-color: #F0FBFF;
     color: #313131;
     z-index: 8;
     margin-left: 45rem;
-    margin-bottom: 7rem;
+    margin-bottom: 9rem;
     position: absolute;
     padding-left: 1.5rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.project-description img {
+    margin-top: 1rem;
 }
 
 .project-title {
@@ -360,16 +364,20 @@ body {
 
 .project-description2 {
     width: 32rem;
-    height: 25rem;
+    height: 29rem;
     border-radius: 5px 5px 5px 5px;
     background-color: #F0FBFF;
     color: #313131;
     z-index: 8;
     margin-right: 45rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     position: absolute;
     padding-left: 1.5rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.project-description2 img {
+    margin-top: 1rem;
 }
 
 .project-image2 {
@@ -465,7 +473,99 @@ button:hover::before {
     height: 900px;
     background-color: #F0FBFF;
     margin: 0;
-    /*clip-path: polygon(0% 0%, 100% 200px, 100% 100%, 0% calc(100% - 0px));*/
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-page .pro {
+    color: #313131;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    width: 100vw;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+    z-index: 8;
+}
+
+.about-page .project-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20rem;
+    margin-bottom: 50rem;
+    position: absolute;
+}
+
+.about-page .project-info .para {
+    margin-left: 10rem;
+    margin-top: 4rem;
+    position: absolute;
+    font-weight: bold;
+    font-size: 7rem;
+    color: #313131;
+    z-index: 7;
+    background-color: #00A2EE;
+    height: 2rem;
+    width: 20rem;
+    border-radius: 3px;
+}
+
+.about-page .social-card {
+    width: 65rem;
+    height: 34rem;
+    background-color: #F0FBFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15rem;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    overflow: hidden;
+}
+
+.social-card .about-description {
+    width: 35rem;
+    margin-left: 1.5rem;
+}
+
+.about-description .socials2 {
+    margin-bottom: 4rem;
+}
+
+.socials2 a {
+    margin-right: 1rem;
+    padding-bottom: 4rem;
+}
+
+.about-description .description-title {
+    padding-top: 5rem;
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+
+.about-description .description-para {
+    font-size: 1.5rem;
+}
+
+.about-page .skills2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.skills2 img {
+    margin-right: .5rem;
+}
+
+.skills2 p {
+    margin-right: 1.5rem;
+    font-weight: bold;
 }
 
 .contact-page {
