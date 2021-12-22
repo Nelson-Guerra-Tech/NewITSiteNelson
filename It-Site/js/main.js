@@ -7,3 +7,13 @@ ScrollReveal().reveal('.projects', { delay: 500, reset: true });
 
 //setting colors
 const mainsColor = ['#008fbb', '#00a2ee', '#f0fbff', '#e6f4f1', '#EF972C'];
+
+
+
+function myFunction() {
+    return window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+}
