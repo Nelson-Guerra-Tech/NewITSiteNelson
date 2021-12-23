@@ -334,7 +334,7 @@ body {
     margin-bottom: 9rem;
     position: absolute;
     padding-left: 1.5rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .project-description img {
@@ -350,6 +350,7 @@ body {
 
 .project-explained {
     font-size: 1.5rem;
+    width: 30rem;
 }
 
 .project-two {
@@ -373,7 +374,7 @@ body {
     margin-bottom: 4rem;
     position: absolute;
     padding-left: 1.5rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .project-description2 img {
@@ -526,6 +527,7 @@ button:hover::before {
     border-radius: 3px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     overflow: hidden;
+    z-index: 8;
 }
 
 .social-card .about-description {
@@ -535,11 +537,57 @@ button:hover::before {
 
 .about-description .socials2 {
     margin-bottom: 4rem;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
 }
 
 .socials2 a {
     margin-right: 1rem;
     padding-bottom: 4rem;
+}
+
+.resume-button {
+    padding: 15px 25px;
+    border: 1px solid #00A2EE;
+    border-radius: 5px;
+    color: #00A2EE;
+    letter-spacing: 3px;
+    z-index: 1;
+    background: transparent;
+    position: relative;
+    font-weight: bold;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 0rem;
+    width: 10rem;
+}
+
+.resume-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+    background-color: #00A2EE;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+.resume-button:hover {
+    color: #F0FBFF;
+}
+
+.resume-button:hover::before {
+    width: 100%;
 }
 
 .about-description .description-title {
@@ -556,7 +604,8 @@ button:hover::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: .5rem;
+    padding-bottom: 1rem;
 }
 
 .skills2 img {
@@ -574,4 +623,210 @@ button:hover::before {
     background-color: #313131;
     margin: 0;
     /*clip-path: polygon(0% 0%, 100% 200px, 100% 100%, 0% calc(100% - 0px));*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-page .pro {
+    color: #F0FBFF;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    width: 100vw;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+    z-index: 8;
+}
+
+.contact-page .project-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    margin-bottom: 50rem;
+    position: absolute;
+}
+
+.project-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20rem;
+    margin-top: 10rem;
+}
+
+.project-info .para {
+    margin-left: 10rem;
+    margin-top: 4rem;
+    position: absolute;
+    font-weight: bold;
+    font-size: 7rem;
+    color: #313131;
+    z-index: 7;
+    background-color: #00A2EE;
+    height: 2rem;
+    width: 20rem;
+    border-radius: 3px;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F0FBFF;
+    height: 38rem;
+    width: 65rem;
+    border-radius: 3px;
+    margin-top: 10rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.contact-form header {
+    color: #313131;
+    font-size: 1.7rem;
+    width: 40rem;
+    text-align: center;
+}
+
+.contact-form .message .field {
+    height: 10rem;
+}
+
+.contact-form .field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    height: 3rem;
+    border-radius: 3px;
+    border: none;
+    margin: 1rem;
+    font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.send-button {
+    padding: 15px 25px;
+    border: 1px solid #00A2EE;
+    border-radius: 5px;
+    color: #F0FBFF;
+    letter-spacing: 3px;
+    z-index: 1;
+    background: #00A2EE;
+    position: relative;
+    font-weight: bold;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+
+.send-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+    background-color: #25E8B3;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+.send-button:hover {
+    color: #F0FBFF;
+}
+
+.send-button:hover::before {
+    width: 100%;
+}
+
+footer {
+    width: 100vw;
+    height: 15rem;
+    background-color: #1b1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-div {
+    color: #F0FBFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 15rem;
+}
+
+.footer-div p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-div .top {
+    position: absolute;
+    margin-bottom: 15rem;
+    margin-right: 2rem;
+}
+
+.footer-div a {
+    color: #F0FBFF;
+    text-decoration: none;
+}
+
+.top-button {
+    padding: 15px 25px;
+    border: 1px solid #00A2EE;
+    border-radius: 5px;
+    color: #F0FBFF;
+    letter-spacing: 3px;
+    z-index: 1;
+    background: #00A2EE;
+    position: relative;
+    font-weight: bold;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+
+.top-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+    background-color: #25E8B3;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+.top-button:hover {
+    color: #F0FBFF;
+}
+
+.top-button:hover::before {
+    width: 100%;
 }
